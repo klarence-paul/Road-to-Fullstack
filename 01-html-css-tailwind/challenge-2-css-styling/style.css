@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #2b1e17;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: coral;
+}
+
+#home {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#home h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+#home h3 {
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+#home img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#menu {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#menu h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2b1e17;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f2ee;
+}
+
+#about {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#about p {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about ul {
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+#contact {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2b1e17;
+}
+
+button {
+  background-color: #2b1e17;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #4a3628;
+}
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #home h2 {
+    font-size: 1.5rem;
+  }
+
+  table, thead, tbody, th, td, tr {
+    font-size: 0.9rem;
+  }
+}
